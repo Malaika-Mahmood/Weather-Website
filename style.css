@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(0, 9, 9);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(247, 243, 243);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Weather App Container */
+.container {
+    background: rgba(21, 22, 24, 0.67);
+    background: url(d1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(4, 0, 0, 0.2);
+    width: 300px;
+    border:10px solid rgb(237, 236, 240);
+}
+
+/* App Title */
+.AppTitle h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: rgb(8, 28, 29);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+
+}
+
+/* Notification Box */
+.notification {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Weather Container */
+.weatherContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Weather Icon */
+.weatherIcon img {
+        border: 4px solid black; /* Reduce border thickness */
+        display: block; /* Remove extra spacing */
+        margin: auto; /* Center the image */
+        padding: 0; /* Remove padding */
+        width: 150px; /* Adjust as needed */
+        height: 130px; /* Adjust as needed */
+    }
+    
+
+/* Temperature */
+.TemperatureValue {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+    color:brown;
+}
+
+/* Temperature Description */
+.TemperatureDescription {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    color: rgb(2, 2, 2);
+}
+
+/* Location */
+.location {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    .TemperatureValue {
+        font-size: 30px;
+    }
+}
